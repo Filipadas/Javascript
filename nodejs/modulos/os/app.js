@@ -1,5 +1,7 @@
 // Importa o módulo 'os' do Node.js para acessar informações do sistema operacional
-const os = require('os');
+//const os = require('os');
+
+import os from 'os';
 
 // Mostra qual é a arquitetura do processador (ex: x64, arm)
 console.log('Arquitetura do sistema:', os.arch());

@@ -1,5 +1,7 @@
 // Importa o módulo HTTP nativo do Node.js
-const http = require('http');
+//const http = require('http');
+
+import http from 'http';
 
 // Faz uma requisição HTTP GET para o endereço especificado
 http.get('http://jsonplaceholder.typicode.com/todos/1', (res) => {
