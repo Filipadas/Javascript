@@ -6,3 +6,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+/* ===== Estilos específicos para a página de login ===== */
+:root{
+  --bg1:#f6f9fc;
+  --bg2:#e9eef8;
+  --card:#ffffff;
+  body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+
+  a {
+    color: #00B7FF;
+  }
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.16);
+}
+
+/* Se houver botões menores em outras partes do site, limitar por contexto pode ser necessário.
+   Caso prefira, posso prefixar com .login-form button[type="submit"] para aplicar só no formulário de login. */
+

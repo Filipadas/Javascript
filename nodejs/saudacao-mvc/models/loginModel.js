@@ -1,13 +1,14 @@
 
 
 module.exports = {
-  gerarMsgPersonalizada: (usuario, senha) => {
+  gerarMsgPersonalizada: (usuario, senha, acesso) => {
     // use comparação estrita e o operador lógico JavaScript '&&'
     if (usuario === "Filipadass" && senha === "12345") {
-      return `Olá, ${usuario}! Você está logado!`;
+      acesso = "liberado";
+      
     } 
     else {
-      return 'Usuário ou senha inválidos.';
+      acesso = "negado";
     }
-  }
+  return `Olá, ${usuario}! Seu acesso foi ${acesso}!`;}
 };

@@ -10,8 +10,8 @@ module.exports = {
   },
 
   logado: (req, res) => {
-      const { usuario, senha } = req.body;
-      const mensagem = loginModel.gerarMsgPersonalizada(usuario, senha);
+      const { usuario, senha, acesso } = req.body;
+      const mensagem = loginModel.gerarMsgPersonalizada(usuario, senha, acesso);
       res.send(`<h1>${mensagem}</h1>`);
     }
 };
