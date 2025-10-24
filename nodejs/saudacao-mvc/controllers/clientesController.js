@@ -1,3 +1,5 @@
+const loginModel = require('../models/loginModel');
+
 module.exports = {
   clientes: (req, res) => {
     res.sendFile('clientes.html', { root: './views' });
@@ -8,12 +10,8 @@ module.exports = {
   },
 
   logado: (req, res) => {
-    res.sendFile('logado.html', { root: './views' });
-  }
-
-  logado: (req, res) => {
       const { usuario, senha } = req.body;
-      const mensagem = saudacaoModel.gerarMsgPersonalizada(usuario, senha);
+      const mensagem = loginModel.gerarMsgPersonalizada(usuario, senha);
       res.send(`<h1>${mensagem}</h1>`);
     }
 };
